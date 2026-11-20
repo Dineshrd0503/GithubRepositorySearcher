@@ -21,8 +21,8 @@ WORKDIR /app
 # Copy the built jar from the builder stage
 COPY --from=builder /app/target/githubrepository-searcher-1.0.0.jar app.jar
 
-# Expose the port Render assigns
-EXPOSE $PORT
+# Expose the application port (Render injects $PORT at runtime)
+EXPOSE 8080
 
 # Run the application
 ENTRYPOINT ["java", "-Dserver.port=${PORT:-8080}", "-jar", "app.jar"]
