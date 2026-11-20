@@ -1,0 +1,92 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------< com.freightfox:githubrepository-searcher >--------------
+[INFO] Building githubrepository-searcher 1.0.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.3.5:run (default-cli) > test-compile @ githubrepository-searcher >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ githubrepository-searcher ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ githubrepository-searcher ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 20 source files with javac [debug parameters release 21] to target\classes
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ githubrepository-searcher ---
+[INFO] skip non existing resourceDirectory D:\freightfox assignment\githubrepository-searcher\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ githubrepository-searcher ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 6 source files with javac [debug parameters release 21] to target\test-classes
+[INFO] /D:/freightfox assignment/githubrepository-searcher/src/test/java/com/freightfox/githubsearcher/service/GithubSearchServiceTest.java: Some input files use unchecked or unsafe operations.
+[INFO] /D:/freightfox assignment/githubrepository-searcher/src/test/java/com/freightfox/githubsearcher/service/GithubSearchServiceTest.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] <<< spring-boot:3.3.5:run (default-cli) < test-compile @ githubrepository-searcher <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.3.5:run (default-cli) @ githubrepository-searcher ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.5)
+
+2026-11-20T19:53:42.669+05:30  INFO 18052 --- [githubrepository-searcher] [  restartedMain] .f.g.GithubRepositorySearcherApplication : Starting GithubRepositorySearcherApplication using Java 21.0.7 with PID 18052 (D:\freightfox assignment\githubrepository-searcher\target\classes started by dines in D:\freightfox assignment\githubrepository-searcher)
+2026-11-20T19:53:42.683+05:30 DEBUG 18052 --- [githubrepository-searcher] [  restartedMain] .f.g.GithubRepositorySearcherApplication : Running with Spring Boot v3.3.5, Spring v6.1.14
+2026-11-20T19:53:42.685+05:30  INFO 18052 --- [githubrepository-searcher] [  restartedMain] .f.g.GithubRepositorySearcherApplication : No active profile set, falling back to 1 default profile: "default"
+2026-11-20T19:53:42.794+05:30  INFO 18052 --- [githubrepository-searcher] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-11-20T19:53:42.794+05:30  INFO 18052 --- [githubrepository-searcher] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-11-20T19:53:44.717+05:30  INFO 18052 --- [githubrepository-searcher] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-11-20T19:53:44.848+05:30  INFO 18052 --- [githubrepository-searcher] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 118 ms. Found 1 JPA repository interface.
+2026-11-20T19:53:46.061+05:30  INFO 18052 --- [githubrepository-searcher] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-11-20T19:53:46.091+05:30  INFO 18052 --- [githubrepository-searcher] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-11-20T19:53:46.091+05:30  INFO 18052 --- [githubrepository-searcher] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2026-11-20T19:53:46.243+05:30  INFO 18052 --- [githubrepository-searcher] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-11-20T19:53:46.245+05:30  INFO 18052 --- [githubrepository-searcher] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3448 ms
+2026-11-20T19:53:46.566+05:30  INFO 18052 --- [githubrepository-searcher] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-11-20T19:53:46.679+05:30  INFO 18052 --- [githubrepository-searcher] [  restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2026-11-20T19:53:46.768+05:30  INFO 18052 --- [githubrepository-searcher] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-11-20T19:53:47.562+05:30  INFO 18052 --- [githubrepository-searcher] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-11-20T19:53:47.620+05:30  INFO 18052 --- [githubrepository-searcher] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-11-20T19:53:48.071+05:30  INFO 18052 --- [githubrepository-searcher] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1527d0d3
+2026-11-20T19:53:48.075+05:30  INFO 18052 --- [githubrepository-searcher] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-11-20T19:53:48.145+05:30  WARN 18052 --- [githubrepository-searcher] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-11-20T19:53:50.215+05:30  INFO 18052 --- [githubrepository-searcher] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-11-20T19:53:50.328+05:30  INFO 18052 --- [githubrepository-searcher] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-11-20T19:53:51.025+05:30  INFO 18052 --- [githubrepository-searcher] [  restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-11-20T19:53:53.122+05:30  WARN 18052 --- [githubrepository-searcher] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2026-11-20T19:53:53.152+05:30  WARN 18052 --- [githubrepository-searcher] [  restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2026-11-20T19:53:53.155+05:30  INFO 18052 --- [githubrepository-searcher] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-11-20T19:53:53.160+05:30  INFO 18052 --- [githubrepository-searcher] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-11-20T19:53:53.166+05:30  INFO 18052 --- [githubrepository-searcher] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-11-20T19:53:53.200+05:30  INFO 18052 --- [githubrepository-searcher] [  restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-11-20T19:53:53.241+05:30 ERROR 18052 --- [githubrepository-searcher] [  restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  26.995 s
+[INFO] Finished at: 2026-11-20T19:53:53+05:30
+[INFO] ------------------------------------------------------------------------

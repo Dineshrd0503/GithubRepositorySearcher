@@ -1,0 +1,1993 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------< com.freightfox:githubrepository-searcher >--------------
+[INFO] Building githubrepository-searcher 1.0.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.3.5:run (default-cli) > test-compile @ githubrepository-searcher >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ githubrepository-searcher ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ githubrepository-searcher ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ githubrepository-searcher ---
+[INFO] skip non existing resourceDirectory D:\freightfox assignment\githubrepository-searcher\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ githubrepository-searcher ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] <<< spring-boot:3.3.5:run (default-cli) < test-compile @ githubrepository-searcher <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.3.5:run (default-cli) @ githubrepository-searcher ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.5)
+
+2026-11-20T19:34:20.403+05:30  INFO 31264 --- [githubrepository-searcher] [  restartedMain] .f.g.GithubRepositorySearcherApplication : Starting GithubRepositorySearcherApplication using Java 21.0.7 with PID 31264 (D:\freightfox assignment\githubrepository-searcher\target\classes started by dines in D:\freightfox assignment\githubrepository-searcher)
+2026-11-20T19:34:20.407+05:30 DEBUG 31264 --- [githubrepository-searcher] [  restartedMain] .f.g.GithubRepositorySearcherApplication : Running with Spring Boot v3.3.5, Spring v6.1.14
+2026-11-20T19:34:20.408+05:30  INFO 31264 --- [githubrepository-searcher] [  restartedMain] .f.g.GithubRepositorySearcherApplication : No active profile set, falling back to 1 default profile: "default"
+2026-11-20T19:34:20.506+05:30  INFO 31264 --- [githubrepository-searcher] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-11-20T19:34:20.506+05:30  INFO 31264 --- [githubrepository-searcher] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-11-20T19:34:22.172+05:30  INFO 31264 --- [githubrepository-searcher] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-11-20T19:34:22.297+05:30  INFO 31264 --- [githubrepository-searcher] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 110 ms. Found 1 JPA repository interface.
+2026-11-20T19:34:23.335+05:30  INFO 31264 --- [githubrepository-searcher] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-11-20T19:34:23.359+05:30  INFO 31264 --- [githubrepository-searcher] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-11-20T19:34:23.360+05:30  INFO 31264 --- [githubrepository-searcher] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2026-11-20T19:34:23.471+05:30  INFO 31264 --- [githubrepository-searcher] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-11-20T19:34:23.473+05:30  INFO 31264 --- [githubrepository-searcher] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2964 ms
+2026-11-20T19:34:23.728+05:30  INFO 31264 --- [githubrepository-searcher] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-11-20T19:34:23.853+05:30  INFO 31264 --- [githubrepository-searcher] [  restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2026-11-20T19:34:23.918+05:30  INFO 31264 --- [githubrepository-searcher] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-11-20T19:34:24.495+05:30  INFO 31264 --- [githubrepository-searcher] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-11-20T19:34:24.560+05:30  INFO 31264 --- [githubrepository-searcher] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-11-20T19:34:24.872+05:30  INFO 31264 --- [githubrepository-searcher] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@69a7e9d8
+2026-11-20T19:34:24.875+05:30  INFO 31264 --- [githubrepository-searcher] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-11-20T19:34:24.936+05:30  WARN 31264 --- [githubrepository-searcher] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-11-20T19:34:26.803+05:30  INFO 31264 --- [githubrepository-searcher] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-11-20T19:34:26.898+05:30  INFO 31264 --- [githubrepository-searcher] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-11-20T19:34:27.442+05:30  INFO 31264 --- [githubrepository-searcher] [  restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-11-20T19:34:29.364+05:30  INFO 31264 --- [githubrepository-searcher] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-11-20T19:34:29.423+05:30  INFO 31264 --- [githubrepository-searcher] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-11-20T19:34:29.440+05:30  INFO 31264 --- [githubrepository-searcher] [  restartedMain] .f.g.GithubRepositorySearcherApplication : Started GithubRepositorySearcherApplication in 9.708 seconds (process running for 10.729)
+2026-11-20T19:34:43.396+05:30  INFO 31264 --- [githubrepository-searcher] [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-11-20T19:34:43.399+05:30  INFO 31264 --- [githubrepository-searcher] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-11-20T19:34:43.414+05:30  INFO 31264 --- [githubrepository-searcher] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2026-11-20T19:34:43.675+05:30  WARN 31264 --- [githubrepository-searcher] [nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource .]
+2026-11-20T19:34:44.253+05:30  WARN 31264 --- [githubrepository-searcher] [nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-11-20T19:35:00.325+05:30  INFO 31264 --- [githubrepository-searcher] [nio-8080-exec-6] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 753 ms
+2026-11-20T19:36:13.872+05:30  INFO 31264 --- [githubrepository-searcher] [io-8080-exec-10] c.f.g.s.impl.GithubSearchServiceImpl     : Searching GitHub repositories: query='react', language='null', sort='stars'
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.fetched_at,
+        r1_0.forks_count,
+        r1_0.github_id,
+        r1_0.programming_language,
+        r1_0.last_updated,
+        r1_0.name,
+        r1_0.owner_name,
+        r1_0.stars_count 
+    from
+        repositories r1_0 
+    where
+        r1_0.github_id=?
+Hibernate: 
+    update
+        repositories 
+    set
+        description=?,
+        fetched_at=?,
+        forks_count=?,
+        github_id=?,
+        programming_language=?,
+        last_updated=?,
+        name=?,
+        owner_name=?,
+        stars_count=? 
+    where
+        id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.fetched_at,
+        r1_0.forks_count,
+        r1_0.github_id,
+        r1_0.programming_language,
+        r1_0.last_updated,
+        r1_0.name,
+        r1_0.owner_name,
+        r1_0.stars_count 
+    from
+        repositories r1_0 
+    where
+        r1_0.github_id=?
+Hibernate: 
+    update
+        repositories 
+    set
+        description=?,
+        fetched_at=?,
+        forks_count=?,
+        github_id=?,
+        programming_language=?,
+        last_updated=?,
+        name=?,
+        owner_name=?,
+        stars_count=? 
+    where
+        id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.fetched_at,
+        r1_0.forks_count,
+        r1_0.github_id,
+        r1_0.programming_language,
+        r1_0.last_updated,
+        r1_0.name,
+        r1_0.owner_name,
+        r1_0.stars_count 
+    from
+        repositories r1_0 
+    where
+        r1_0.github_id=?
+Hibernate: 
+    update
+        repositories 
+    set
+        description=?,
+        fetched_at=?,
+        forks_count=?,
+        github_id=?,
+        programming_language=?,
+        last_updated=?,
+        name=?,
+        owner_name=?,
+        stars_count=? 
+    where
+        id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.fetched_at,
+        r1_0.forks_count,
+        r1_0.github_id,
+        r1_0.programming_language,
+        r1_0.last_updated,
+        r1_0.name,
+        r1_0.owner_name,
+        r1_0.stars_count 
+    from
+        repositories r1_0 
+    where
+        r1_0.github_id=?
+Hibernate: 
+    update
+        repositories 
+    set
+        description=?,
+        fetched_at=?,
+        forks_count=?,
+        github_id=?,
+        programming_language=?,
+        last_updated=?,
+        name=?,
+        owner_name=?,
+        stars_count=? 
+    where
+        id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.fetched_at,
+        r1_0.forks_count,
+        r1_0.github_id,
+        r1_0.programming_language,
+        r1_0.last_updated,
+        r1_0.name,
+        r1_0.owner_name,
+        r1_0.stars_count 
+    from
+        repositories r1_0 
+    where
+        r1_0.github_id=?
+Hibernate: 
+    update
+        repositories 
+    set
+        description=?,
+        fetched_at=?,
+        forks_count=?,
+        github_id=?,
+        programming_language=?,
+        last_updated=?,
+        name=?,
+        owner_name=?,
+        stars_count=? 
+    where
+        id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.fetched_at,
+        r1_0.forks_count,
+        r1_0.github_id,
+        r1_0.programming_language,
+        r1_0.last_updated,
+        r1_0.name,
+        r1_0.owner_name,
+        r1_0.stars_count 
+    from
+        repositories r1_0 
+    where
+        r1_0.github_id=?
+Hibernate: 
+    update
+        repositories 
+    set
+        description=?,
+        fetched_at=?,
+        forks_count=?,
+        github_id=?,
+        programming_language=?,
+        last_updated=?,
+        name=?,
+        owner_name=?,
+        stars_count=? 
+    where
+        id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.fetched_at,
+        r1_0.forks_count,
+        r1_0.github_id,
+        r1_0.programming_language,
+        r1_0.last_updated,
+        r1_0.name,
+        r1_0.owner_name,
+        r1_0.stars_count 
+    from
+        repositories r1_0 
+    where
+        r1_0.github_id=?
+Hibernate: 
+    update
+        repositories 
+    set
+        description=?,
+        fetched_at=?,
+        forks_count=?,
+        github_id=?,
+        programming_language=?,
+        last_updated=?,
+        name=?,
+        owner_name=?,
+        stars_count=? 
+    where
+        id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.fetched_at,
+        r1_0.forks_count,
+        r1_0.github_id,
+        r1_0.programming_language,
+        r1_0.last_updated,
+        r1_0.name,
+        r1_0.owner_name,
+        r1_0.stars_count 
+    from
+        repositories r1_0 
+    where
+        r1_0.github_id=?
+Hibernate: 
+    update
+        repositories 
+    set
+        description=?,
+        fetched_at=?,
+        forks_count=?,
+        github_id=?,
+        programming_language=?,
+        last_updated=?,
+        name=?,
+        owner_name=?,
+        stars_count=? 
+    where
+        id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.fetched_at,
+        r1_0.forks_count,
+        r1_0.github_id,
+        r1_0.programming_language,
+        r1_0.last_updated,
+        r1_0.name,
+        r1_0.owner_name,
+        r1_0.stars_count 
+    from
+        repositories r1_0 
+    where
+        r1_0.github_id=?
+Hibernate: 
+    update
+        repositories 
+    set
+        description=?,
+        fetched_at=?,
+        forks_count=?,
+        github_id=?,
+        programming_language=?,
+        last_updated=?,
+        name=?,
+        owner_name=?,
+        stars_count=? 
+    where
+        id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.fetched_at,
+        r1_0.forks_count,
+        r1_0.github_id,
+        r1_0.programming_language,
+        r1_0.last_updated,
+        r1_0.name,
+        r1_0.owner_name,
+        r1_0.stars_count 
+    from
+        repositories r1_0 
+    where
+        r1_0.github_id=?
+Hibernate: 
+    update
+        repositories 
+    set
+        description=?,
+        fetched_at=?,
+        forks_count=?,
+        github_id=?,
+        programming_language=?,
+        last_updated=?,
+        name=?,
+        owner_name=?,
+        stars_count=? 
+    where
+        id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.fetched_at,
+        r1_0.forks_count,
+        r1_0.github_id,
+        r1_0.programming_language,
+        r1_0.last_updated,
+        r1_0.name,
+        r1_0.owner_name,
+        r1_0.stars_count 
+    from
+        repositories r1_0 
+    where
+        r1_0.github_id=?
+Hibernate: 
+    update
+        repositories 
+    set
+        description=?,
+        fetched_at=?,
+        forks_count=?,
+        github_id=?,
+        programming_language=?,
+        last_updated=?,
+        name=?,
+        owner_name=?,
+        stars_count=? 
+    where
+        id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.fetched_at,
+        r1_0.forks_count,
+        r1_0.github_id,
+        r1_0.programming_language,
+        r1_0.last_updated,
+        r1_0.name,
+        r1_0.owner_name,
+        r1_0.stars_count 
+    from
+        repositories r1_0 
+    where
+        r1_0.github_id=?
+Hibernate: 
+    update
+        repositories 
+    set
+        description=?,
+        fetched_at=?,
+        forks_count=?,
+        github_id=?,
+        programming_language=?,
+        last_updated=?,
+        name=?,
+        owner_name=?,
+        stars_count=? 
+    where
+        id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.fetched_at,
+        r1_0.forks_count,
+        r1_0.github_id,
+        r1_0.programming_language,
+        r1_0.last_updated,
+        r1_0.name,
+        r1_0.owner_name,
+        r1_0.stars_count 
+    from
+        repositories r1_0 
+    where
+        r1_0.github_id=?
+Hibernate: 
+    update
+        repositories 
+    set
+        description=?,
+        fetched_at=?,
+        forks_count=?,
+        github_id=?,
+        programming_language=?,
+        last_updated=?,
+        name=?,
+        owner_name=?,
+        stars_count=? 
+    where
+        id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.fetched_at,
+        r1_0.forks_count,
+        r1_0.github_id,
+        r1_0.programming_language,
+        r1_0.last_updated,
+        r1_0.name,
+        r1_0.owner_name,
+        r1_0.stars_count 
+    from
+        repositories r1_0 
+    where
+        r1_0.github_id=?
+Hibernate: 
+    update
+        repositories 
+    set
+        description=?,
+        fetched_at=?,
+        forks_count=?,
+        github_id=?,
+        programming_language=?,
+        last_updated=?,
+        name=?,
+        owner_name=?,
+        stars_count=? 
+    where
+        id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.fetched_at,
+        r1_0.forks_count,
+        r1_0.github_id,
+        r1_0.programming_language,
+        r1_0.last_updated,
+        r1_0.name,
+        r1_0.owner_name,
+        r1_0.stars_count 
+    from
+        repositories r1_0 
+    where
+        r1_0.github_id=?
+Hibernate: 
+    update
+        repositories 
+    set
+        description=?,
+        fetched_at=?,
+        forks_count=?,
+        github_id=?,
+        programming_language=?,
+        last_updated=?,
+        name=?,
+        owner_name=?,
+        stars_count=? 
+    where
+        id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.fetched_at,
+        r1_0.forks_count,
+        r1_0.github_id,
+        r1_0.programming_language,
+        r1_0.last_updated,
+        r1_0.name,
+        r1_0.owner_name,
+        r1_0.stars_count 
+    from
+        repositories r1_0 
+    where
+        r1_0.github_id=?
+Hibernate: 
+    update
+        repositories 
+    set
+        description=?,
+        fetched_at=?,
+        forks_count=?,
+        github_id=?,
+        programming_language=?,
+        last_updated=?,
+        name=?,
+        owner_name=?,
+        stars_count=? 
+    where
+        id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.fetched_at,
+        r1_0.forks_count,
+        r1_0.github_id,
+        r1_0.programming_language,
+        r1_0.last_updated,
+        r1_0.name,
+        r1_0.owner_name,
+        r1_0.stars_count 
+    from
+        repositories r1_0 
+    where
+        r1_0.github_id=?
+Hibernate: 
+    update
+        repositories 
+    set
+        description=?,
+        fetched_at=?,
+        forks_count=?,
+        github_id=?,
+        programming_language=?,
+        last_updated=?,
+        name=?,
+        owner_name=?,
+        stars_count=? 
+    where
+        id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.fetched_at,
+        r1_0.forks_count,
+        r1_0.github_id,
+        r1_0.programming_language,
+        r1_0.last_updated,
+        r1_0.name,
+        r1_0.owner_name,
+        r1_0.stars_count 
+    from
+        repositories r1_0 
+    where
+        r1_0.github_id=?
+Hibernate: 
+    update
+        repositories 
+    set
+        description=?,
+        fetched_at=?,
+        forks_count=?,
+        github_id=?,
+        programming_language=?,
+        last_updated=?,
+        name=?,
+        owner_name=?,
+        stars_count=? 
+    where
+        id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.fetched_at,
+        r1_0.forks_count,
+        r1_0.github_id,
+        r1_0.programming_language,
+        r1_0.last_updated,
+        r1_0.name,
+        r1_0.owner_name,
+        r1_0.stars_count 
+    from
+        repositories r1_0 
+    where
+        r1_0.github_id=?
+Hibernate: 
+    update
+        repositories 
+    set
+        description=?,
+        fetched_at=?,
+        forks_count=?,
+        github_id=?,
+        programming_language=?,
+        last_updated=?,
+        name=?,
+        owner_name=?,
+        stars_count=? 
+    where
+        id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.fetched_at,
+        r1_0.forks_count,
+        r1_0.github_id,
+        r1_0.programming_language,
+        r1_0.last_updated,
+        r1_0.name,
+        r1_0.owner_name,
+        r1_0.stars_count 
+    from
+        repositories r1_0 
+    where
+        r1_0.github_id=?
+Hibernate: 
+    update
+        repositories 
+    set
+        description=?,
+        fetched_at=?,
+        forks_count=?,
+        github_id=?,
+        programming_language=?,
+        last_updated=?,
+        name=?,
+        owner_name=?,
+        stars_count=? 
+    where
+        id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.fetched_at,
+        r1_0.forks_count,
+        r1_0.github_id,
+        r1_0.programming_language,
+        r1_0.last_updated,
+        r1_0.name,
+        r1_0.owner_name,
+        r1_0.stars_count 
+    from
+        repositories r1_0 
+    where
+        r1_0.github_id=?
+Hibernate: 
+    update
+        repositories 
+    set
+        description=?,
+        fetched_at=?,
+        forks_count=?,
+        github_id=?,
+        programming_language=?,
+        last_updated=?,
+        name=?,
+        owner_name=?,
+        stars_count=? 
+    where
+        id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.fetched_at,
+        r1_0.forks_count,
+        r1_0.github_id,
+        r1_0.programming_language,
+        r1_0.last_updated,
+        r1_0.name,
+        r1_0.owner_name,
+        r1_0.stars_count 
+    from
+        repositories r1_0 
+    where
+        r1_0.github_id=?
+Hibernate: 
+    update
+        repositories 
+    set
+        description=?,
+        fetched_at=?,
+        forks_count=?,
+        github_id=?,
+        programming_language=?,
+        last_updated=?,
+        name=?,
+        owner_name=?,
+        stars_count=? 
+    where
+        id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.fetched_at,
+        r1_0.forks_count,
+        r1_0.github_id,
+        r1_0.programming_language,
+        r1_0.last_updated,
+        r1_0.name,
+        r1_0.owner_name,
+        r1_0.stars_count 
+    from
+        repositories r1_0 
+    where
+        r1_0.github_id=?
+Hibernate: 
+    update
+        repositories 
+    set
+        description=?,
+        fetched_at=?,
+        forks_count=?,
+        github_id=?,
+        programming_language=?,
+        last_updated=?,
+        name=?,
+        owner_name=?,
+        stars_count=? 
+    where
+        id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.fetched_at,
+        r1_0.forks_count,
+        r1_0.github_id,
+        r1_0.programming_language,
+        r1_0.last_updated,
+        r1_0.name,
+        r1_0.owner_name,
+        r1_0.stars_count 
+    from
+        repositories r1_0 
+    where
+        r1_0.github_id=?
+Hibernate: 
+    update
+        repositories 
+    set
+        description=?,
+        fetched_at=?,
+        forks_count=?,
+        github_id=?,
+        programming_language=?,
+        last_updated=?,
+        name=?,
+        owner_name=?,
+        stars_count=? 
+    where
+        id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.fetched_at,
+        r1_0.forks_count,
+        r1_0.github_id,
+        r1_0.programming_language,
+        r1_0.last_updated,
+        r1_0.name,
+        r1_0.owner_name,
+        r1_0.stars_count 
+    from
+        repositories r1_0 
+    where
+        r1_0.github_id=?
+Hibernate: 
+    update
+        repositories 
+    set
+        description=?,
+        fetched_at=?,
+        forks_count=?,
+        github_id=?,
+        programming_language=?,
+        last_updated=?,
+        name=?,
+        owner_name=?,
+        stars_count=? 
+    where
+        id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.fetched_at,
+        r1_0.forks_count,
+        r1_0.github_id,
+        r1_0.programming_language,
+        r1_0.last_updated,
+        r1_0.name,
+        r1_0.owner_name,
+        r1_0.stars_count 
+    from
+        repositories r1_0 
+    where
+        r1_0.github_id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.fetched_at,
+        r1_0.forks_count,
+        r1_0.github_id,
+        r1_0.programming_language,
+        r1_0.last_updated,
+        r1_0.name,
+        r1_0.owner_name,
+        r1_0.stars_count 
+    from
+        repositories r1_0 
+    where
+        r1_0.github_id=?
+Hibernate: 
+    update
+        repositories 
+    set
+        description=?,
+        fetched_at=?,
+        forks_count=?,
+        github_id=?,
+        programming_language=?,
+        last_updated=?,
+        name=?,
+        owner_name=?,
+        stars_count=? 
+    where
+        id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.fetched_at,
+        r1_0.forks_count,
+        r1_0.github_id,
+        r1_0.programming_language,
+        r1_0.last_updated,
+        r1_0.name,
+        r1_0.owner_name,
+        r1_0.stars_count 
+    from
+        repositories r1_0 
+    where
+        r1_0.github_id=?
+Hibernate: 
+    update
+        repositories 
+    set
+        description=?,
+        fetched_at=?,
+        forks_count=?,
+        github_id=?,
+        programming_language=?,
+        last_updated=?,
+        name=?,
+        owner_name=?,
+        stars_count=? 
+    where
+        id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.fetched_at,
+        r1_0.forks_count,
+        r1_0.github_id,
+        r1_0.programming_language,
+        r1_0.last_updated,
+        r1_0.name,
+        r1_0.owner_name,
+        r1_0.stars_count 
+    from
+        repositories r1_0 
+    where
+        r1_0.github_id=?
+Hibernate: 
+    update
+        repositories 
+    set
+        description=?,
+        fetched_at=?,
+        forks_count=?,
+        github_id=?,
+        programming_language=?,
+        last_updated=?,
+        name=?,
+        owner_name=?,
+        stars_count=? 
+    where
+        id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.fetched_at,
+        r1_0.forks_count,
+        r1_0.github_id,
+        r1_0.programming_language,
+        r1_0.last_updated,
+        r1_0.name,
+        r1_0.owner_name,
+        r1_0.stars_count 
+    from
+        repositories r1_0 
+    where
+        r1_0.github_id=?
+Hibernate: 
+    insert 
+    into
+        repositories
+        (description, fetched_at, forks_count, github_id, programming_language, last_updated, name, owner_name, stars_count) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?) 
+    returning id
+Hibernate: 
+    update
+        repositories 
+    set
+        description=?,
+        fetched_at=?,
+        forks_count=?,
+        github_id=?,
+        programming_language=?,
+        last_updated=?,
+        name=?,
+        owner_name=?,
+        stars_count=? 
+    where
+        id=?
+2026-11-20T19:36:17.425+05:30  INFO 31264 --- [githubrepository-searcher] [io-8080-exec-10] c.f.g.s.impl.GithubSearchServiceImpl     : Upsert completed: inserted=1, updated=29, total=30
+2026-11-20T19:37:56.059+05:30  WARN 31264 --- [githubrepository-searcher] [nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/github/repositories/query=react.]
+2026-11-20T19:38:03.040+05:30  WARN 31264 --- [githubrepository-searcher] [nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/github/repositories/&query=react.]
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.fetched_at,
+        r1_0.forks_count,
+        r1_0.github_id,
+        r1_0.programming_language,
+        r1_0.last_updated,
+        r1_0.name,
+        r1_0.owner_name,
+        r1_0.stars_count 
+    from
+        repositories r1_0 
+    order by
+        r1_0.stars_count desc
+2026-11-20T19:39:39.038+05:30  INFO 31264 --- [githubrepository-searcher] [nio-8080-exec-8] c.f.g.s.impl.GithubSearchServiceImpl     : Searching GitHub repositories: query='typescript', language='null', sort='stars'
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.fetched_at,
+        r1_0.forks_count,
+        r1_0.github_id,
+        r1_0.programming_language,
+        r1_0.last_updated,
+        r1_0.name,
+        r1_0.owner_name,
+        r1_0.stars_count 
+    from
+        repositories r1_0 
+    where
+        r1_0.github_id=?
+Hibernate: 
+    update
+        repositories 
+    set
+        description=?,
+        fetched_at=?,
+        forks_count=?,
+        github_id=?,
+        programming_language=?,
+        last_updated=?,
+        name=?,
+        owner_name=?,
+        stars_count=? 
+    where
+        id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.fetched_at,
+        r1_0.forks_count,
+        r1_0.github_id,
+        r1_0.programming_language,
+        r1_0.last_updated,
+        r1_0.name,
+        r1_0.owner_name,
+        r1_0.stars_count 
+    from
+        repositories r1_0 
+    where
+        r1_0.github_id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.fetched_at,
+        r1_0.forks_count,
+        r1_0.github_id,
+        r1_0.programming_language,
+        r1_0.last_updated,
+        r1_0.name,
+        r1_0.owner_name,
+        r1_0.stars_count 
+    from
+        repositories r1_0 
+    where
+        r1_0.github_id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.fetched_at,
+        r1_0.forks_count,
+        r1_0.github_id,
+        r1_0.programming_language,
+        r1_0.last_updated,
+        r1_0.name,
+        r1_0.owner_name,
+        r1_0.stars_count 
+    from
+        repositories r1_0 
+    where
+        r1_0.github_id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.fetched_at,
+        r1_0.forks_count,
+        r1_0.github_id,
+        r1_0.programming_language,
+        r1_0.last_updated,
+        r1_0.name,
+        r1_0.owner_name,
+        r1_0.stars_count 
+    from
+        repositories r1_0 
+    where
+        r1_0.github_id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.fetched_at,
+        r1_0.forks_count,
+        r1_0.github_id,
+        r1_0.programming_language,
+        r1_0.last_updated,
+        r1_0.name,
+        r1_0.owner_name,
+        r1_0.stars_count 
+    from
+        repositories r1_0 
+    where
+        r1_0.github_id=?
+Hibernate: 
+    update
+        repositories 
+    set
+        description=?,
+        fetched_at=?,
+        forks_count=?,
+        github_id=?,
+        programming_language=?,
+        last_updated=?,
+        name=?,
+        owner_name=?,
+        stars_count=? 
+    where
+        id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.fetched_at,
+        r1_0.forks_count,
+        r1_0.github_id,
+        r1_0.programming_language,
+        r1_0.last_updated,
+        r1_0.name,
+        r1_0.owner_name,
+        r1_0.stars_count 
+    from
+        repositories r1_0 
+    where
+        r1_0.github_id=?
+Hibernate: 
+    update
+        repositories 
+    set
+        description=?,
+        fetched_at=?,
+        forks_count=?,
+        github_id=?,
+        programming_language=?,
+        last_updated=?,
+        name=?,
+        owner_name=?,
+        stars_count=? 
+    where
+        id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.fetched_at,
+        r1_0.forks_count,
+        r1_0.github_id,
+        r1_0.programming_language,
+        r1_0.last_updated,
+        r1_0.name,
+        r1_0.owner_name,
+        r1_0.stars_count 
+    from
+        repositories r1_0 
+    where
+        r1_0.github_id=?
+Hibernate: 
+    update
+        repositories 
+    set
+        description=?,
+        fetched_at=?,
+        forks_count=?,
+        github_id=?,
+        programming_language=?,
+        last_updated=?,
+        name=?,
+        owner_name=?,
+        stars_count=? 
+    where
+        id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.fetched_at,
+        r1_0.forks_count,
+        r1_0.github_id,
+        r1_0.programming_language,
+        r1_0.last_updated,
+        r1_0.name,
+        r1_0.owner_name,
+        r1_0.stars_count 
+    from
+        repositories r1_0 
+    where
+        r1_0.github_id=?
+Hibernate: 
+    update
+        repositories 
+    set
+        description=?,
+        fetched_at=?,
+        forks_count=?,
+        github_id=?,
+        programming_language=?,
+        last_updated=?,
+        name=?,
+        owner_name=?,
+        stars_count=? 
+    where
+        id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.fetched_at,
+        r1_0.forks_count,
+        r1_0.github_id,
+        r1_0.programming_language,
+        r1_0.last_updated,
+        r1_0.name,
+        r1_0.owner_name,
+        r1_0.stars_count 
+    from
+        repositories r1_0 
+    where
+        r1_0.github_id=?
+Hibernate: 
+    update
+        repositories 
+    set
+        description=?,
+        fetched_at=?,
+        forks_count=?,
+        github_id=?,
+        programming_language=?,
+        last_updated=?,
+        name=?,
+        owner_name=?,
+        stars_count=? 
+    where
+        id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.fetched_at,
+        r1_0.forks_count,
+        r1_0.github_id,
+        r1_0.programming_language,
+        r1_0.last_updated,
+        r1_0.name,
+        r1_0.owner_name,
+        r1_0.stars_count 
+    from
+        repositories r1_0 
+    where
+        r1_0.github_id=?
+Hibernate: 
+    update
+        repositories 
+    set
+        description=?,
+        fetched_at=?,
+        forks_count=?,
+        github_id=?,
+        programming_language=?,
+        last_updated=?,
+        name=?,
+        owner_name=?,
+        stars_count=? 
+    where
+        id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.fetched_at,
+        r1_0.forks_count,
+        r1_0.github_id,
+        r1_0.programming_language,
+        r1_0.last_updated,
+        r1_0.name,
+        r1_0.owner_name,
+        r1_0.stars_count 
+    from
+        repositories r1_0 
+    where
+        r1_0.github_id=?
+Hibernate: 
+    update
+        repositories 
+    set
+        description=?,
+        fetched_at=?,
+        forks_count=?,
+        github_id=?,
+        programming_language=?,
+        last_updated=?,
+        name=?,
+        owner_name=?,
+        stars_count=? 
+    where
+        id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.fetched_at,
+        r1_0.forks_count,
+        r1_0.github_id,
+        r1_0.programming_language,
+        r1_0.last_updated,
+        r1_0.name,
+        r1_0.owner_name,
+        r1_0.stars_count 
+    from
+        repositories r1_0 
+    where
+        r1_0.github_id=?
+Hibernate: 
+    update
+        repositories 
+    set
+        description=?,
+        fetched_at=?,
+        forks_count=?,
+        github_id=?,
+        programming_language=?,
+        last_updated=?,
+        name=?,
+        owner_name=?,
+        stars_count=? 
+    where
+        id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.fetched_at,
+        r1_0.forks_count,
+        r1_0.github_id,
+        r1_0.programming_language,
+        r1_0.last_updated,
+        r1_0.name,
+        r1_0.owner_name,
+        r1_0.stars_count 
+    from
+        repositories r1_0 
+    where
+        r1_0.github_id=?
+Hibernate: 
+    update
+        repositories 
+    set
+        description=?,
+        fetched_at=?,
+        forks_count=?,
+        github_id=?,
+        programming_language=?,
+        last_updated=?,
+        name=?,
+        owner_name=?,
+        stars_count=? 
+    where
+        id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.fetched_at,
+        r1_0.forks_count,
+        r1_0.github_id,
+        r1_0.programming_language,
+        r1_0.last_updated,
+        r1_0.name,
+        r1_0.owner_name,
+        r1_0.stars_count 
+    from
+        repositories r1_0 
+    where
+        r1_0.github_id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.fetched_at,
+        r1_0.forks_count,
+        r1_0.github_id,
+        r1_0.programming_language,
+        r1_0.last_updated,
+        r1_0.name,
+        r1_0.owner_name,
+        r1_0.stars_count 
+    from
+        repositories r1_0 
+    where
+        r1_0.github_id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.fetched_at,
+        r1_0.forks_count,
+        r1_0.github_id,
+        r1_0.programming_language,
+        r1_0.last_updated,
+        r1_0.name,
+        r1_0.owner_name,
+        r1_0.stars_count 
+    from
+        repositories r1_0 
+    where
+        r1_0.github_id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.fetched_at,
+        r1_0.forks_count,
+        r1_0.github_id,
+        r1_0.programming_language,
+        r1_0.last_updated,
+        r1_0.name,
+        r1_0.owner_name,
+        r1_0.stars_count 
+    from
+        repositories r1_0 
+    where
+        r1_0.github_id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.fetched_at,
+        r1_0.forks_count,
+        r1_0.github_id,
+        r1_0.programming_language,
+        r1_0.last_updated,
+        r1_0.name,
+        r1_0.owner_name,
+        r1_0.stars_count 
+    from
+        repositories r1_0 
+    where
+        r1_0.github_id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.fetched_at,
+        r1_0.forks_count,
+        r1_0.github_id,
+        r1_0.programming_language,
+        r1_0.last_updated,
+        r1_0.name,
+        r1_0.owner_name,
+        r1_0.stars_count 
+    from
+        repositories r1_0 
+    where
+        r1_0.github_id=?
+Hibernate: 
+    update
+        repositories 
+    set
+        description=?,
+        fetched_at=?,
+        forks_count=?,
+        github_id=?,
+        programming_language=?,
+        last_updated=?,
+        name=?,
+        owner_name=?,
+        stars_count=? 
+    where
+        id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.fetched_at,
+        r1_0.forks_count,
+        r1_0.github_id,
+        r1_0.programming_language,
+        r1_0.last_updated,
+        r1_0.name,
+        r1_0.owner_name,
+        r1_0.stars_count 
+    from
+        repositories r1_0 
+    where
+        r1_0.github_id=?
+Hibernate: 
+    update
+        repositories 
+    set
+        description=?,
+        fetched_at=?,
+        forks_count=?,
+        github_id=?,
+        programming_language=?,
+        last_updated=?,
+        name=?,
+        owner_name=?,
+        stars_count=? 
+    where
+        id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.fetched_at,
+        r1_0.forks_count,
+        r1_0.github_id,
+        r1_0.programming_language,
+        r1_0.last_updated,
+        r1_0.name,
+        r1_0.owner_name,
+        r1_0.stars_count 
+    from
+        repositories r1_0 
+    where
+        r1_0.github_id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.fetched_at,
+        r1_0.forks_count,
+        r1_0.github_id,
+        r1_0.programming_language,
+        r1_0.last_updated,
+        r1_0.name,
+        r1_0.owner_name,
+        r1_0.stars_count 
+    from
+        repositories r1_0 
+    where
+        r1_0.github_id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.fetched_at,
+        r1_0.forks_count,
+        r1_0.github_id,
+        r1_0.programming_language,
+        r1_0.last_updated,
+        r1_0.name,
+        r1_0.owner_name,
+        r1_0.stars_count 
+    from
+        repositories r1_0 
+    where
+        r1_0.github_id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.fetched_at,
+        r1_0.forks_count,
+        r1_0.github_id,
+        r1_0.programming_language,
+        r1_0.last_updated,
+        r1_0.name,
+        r1_0.owner_name,
+        r1_0.stars_count 
+    from
+        repositories r1_0 
+    where
+        r1_0.github_id=?
+Hibernate: 
+    update
+        repositories 
+    set
+        description=?,
+        fetched_at=?,
+        forks_count=?,
+        github_id=?,
+        programming_language=?,
+        last_updated=?,
+        name=?,
+        owner_name=?,
+        stars_count=? 
+    where
+        id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.fetched_at,
+        r1_0.forks_count,
+        r1_0.github_id,
+        r1_0.programming_language,
+        r1_0.last_updated,
+        r1_0.name,
+        r1_0.owner_name,
+        r1_0.stars_count 
+    from
+        repositories r1_0 
+    where
+        r1_0.github_id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.fetched_at,
+        r1_0.forks_count,
+        r1_0.github_id,
+        r1_0.programming_language,
+        r1_0.last_updated,
+        r1_0.name,
+        r1_0.owner_name,
+        r1_0.stars_count 
+    from
+        repositories r1_0 
+    where
+        r1_0.github_id=?
+Hibernate: 
+    update
+        repositories 
+    set
+        description=?,
+        fetched_at=?,
+        forks_count=?,
+        github_id=?,
+        programming_language=?,
+        last_updated=?,
+        name=?,
+        owner_name=?,
+        stars_count=? 
+    where
+        id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.fetched_at,
+        r1_0.forks_count,
+        r1_0.github_id,
+        r1_0.programming_language,
+        r1_0.last_updated,
+        r1_0.name,
+        r1_0.owner_name,
+        r1_0.stars_count 
+    from
+        repositories r1_0 
+    where
+        r1_0.github_id=?
+Hibernate: 
+    update
+        repositories 
+    set
+        description=?,
+        fetched_at=?,
+        forks_count=?,
+        github_id=?,
+        programming_language=?,
+        last_updated=?,
+        name=?,
+        owner_name=?,
+        stars_count=? 
+    where
+        id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.fetched_at,
+        r1_0.forks_count,
+        r1_0.github_id,
+        r1_0.programming_language,
+        r1_0.last_updated,
+        r1_0.name,
+        r1_0.owner_name,
+        r1_0.stars_count 
+    from
+        repositories r1_0 
+    where
+        r1_0.github_id=?
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.fetched_at,
+        r1_0.forks_count,
+        r1_0.github_id,
+        r1_0.programming_language,
+        r1_0.last_updated,
+        r1_0.name,
+        r1_0.owner_name,
+        r1_0.stars_count 
+    from
+        repositories r1_0 
+    where
+        r1_0.github_id=?
+Hibernate: 
+    insert 
+    into
+        repositories
+        (description, fetched_at, forks_count, github_id, programming_language, last_updated, name, owner_name, stars_count) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?) 
+    returning id
+Hibernate: 
+    insert 
+    into
+        repositories
+        (description, fetched_at, forks_count, github_id, programming_language, last_updated, name, owner_name, stars_count) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?) 
+    returning id
+Hibernate: 
+    insert 
+    into
+        repositories
+        (description, fetched_at, forks_count, github_id, programming_language, last_updated, name, owner_name, stars_count) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?) 
+    returning id
+Hibernate: 
+    insert 
+    into
+        repositories
+        (description, fetched_at, forks_count, github_id, programming_language, last_updated, name, owner_name, stars_count) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?) 
+    returning id
+Hibernate: 
+    insert 
+    into
+        repositories
+        (description, fetched_at, forks_count, github_id, programming_language, last_updated, name, owner_name, stars_count) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?) 
+    returning id
+Hibernate: 
+    insert 
+    into
+        repositories
+        (description, fetched_at, forks_count, github_id, programming_language, last_updated, name, owner_name, stars_count) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?) 
+    returning id
+Hibernate: 
+    insert 
+    into
+        repositories
+        (description, fetched_at, forks_count, github_id, programming_language, last_updated, name, owner_name, stars_count) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?) 
+    returning id
+Hibernate: 
+    insert 
+    into
+        repositories
+        (description, fetched_at, forks_count, github_id, programming_language, last_updated, name, owner_name, stars_count) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?) 
+    returning id
+Hibernate: 
+    insert 
+    into
+        repositories
+        (description, fetched_at, forks_count, github_id, programming_language, last_updated, name, owner_name, stars_count) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?) 
+    returning id
+Hibernate: 
+    insert 
+    into
+        repositories
+        (description, fetched_at, forks_count, github_id, programming_language, last_updated, name, owner_name, stars_count) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?) 
+    returning id
+Hibernate: 
+    insert 
+    into
+        repositories
+        (description, fetched_at, forks_count, github_id, programming_language, last_updated, name, owner_name, stars_count) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?) 
+    returning id
+Hibernate: 
+    insert 
+    into
+        repositories
+        (description, fetched_at, forks_count, github_id, programming_language, last_updated, name, owner_name, stars_count) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?) 
+    returning id
+Hibernate: 
+    insert 
+    into
+        repositories
+        (description, fetched_at, forks_count, github_id, programming_language, last_updated, name, owner_name, stars_count) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?) 
+    returning id
+Hibernate: 
+    insert 
+    into
+        repositories
+        (description, fetched_at, forks_count, github_id, programming_language, last_updated, name, owner_name, stars_count) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?) 
+    returning id
+Hibernate: 
+    insert 
+    into
+        repositories
+        (description, fetched_at, forks_count, github_id, programming_language, last_updated, name, owner_name, stars_count) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?) 
+    returning id
+2026-11-20T19:39:41.940+05:30  INFO 31264 --- [githubrepository-searcher] [nio-8080-exec-8] c.f.g.s.impl.GithubSearchServiceImpl     : Upsert completed: inserted=15, updated=15, total=30
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.fetched_at,
+        r1_0.forks_count,
+        r1_0.github_id,
+        r1_0.programming_language,
+        r1_0.last_updated,
+        r1_0.name,
+        r1_0.owner_name,
+        r1_0.stars_count 
+    from
+        repositories r1_0 
+    order by
+        r1_0.stars_count desc
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.fetched_at,
+        r1_0.forks_count,
+        r1_0.github_id,
+        r1_0.programming_language,
+        r1_0.last_updated,
+        r1_0.name,
+        r1_0.owner_name,
+        r1_0.stars_count 
+    from
+        repositories r1_0 
+    order by
+        r1_0.stars_count desc
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.fetched_at,
+        r1_0.forks_count,
+        r1_0.github_id,
+        r1_0.programming_language,
+        r1_0.last_updated,
+        r1_0.name,
+        r1_0.owner_name,
+        r1_0.stars_count 
+    from
+        repositories r1_0 
+    order by
+        r1_0.stars_count desc
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.fetched_at,
+        r1_0.forks_count,
+        r1_0.github_id,
+        r1_0.programming_language,
+        r1_0.last_updated,
+        r1_0.name,
+        r1_0.owner_name,
+        r1_0.stars_count 
+    from
+        repositories r1_0 
+    order by
+        r1_0.stars_count desc
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.fetched_at,
+        r1_0.forks_count,
+        r1_0.github_id,
+        r1_0.programming_language,
+        r1_0.last_updated,
+        r1_0.name,
+        r1_0.owner_name,
+        r1_0.stars_count 
+    from
+        repositories r1_0 
+    order by
+        r1_0.stars_count desc
+2026-11-20T19:53:30.997+05:30  INFO 31264 --- [githubrepository-searcher] [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 23 class path changes (0 additions, 23 deletions, 0 modifications)
+2026-11-20T19:53:31.056+05:30  INFO 31264 --- [githubrepository-searcher] [       Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-11-20T19:53:31.063+05:30  INFO 31264 --- [githubrepository-searcher] [       Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-11-20T19:53:31.074+05:30  INFO 31264 --- [githubrepository-searcher] [       Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.5)
+
+2026-11-20T19:53:31.277+05:30  INFO 31264 --- [githubrepository-searcher] [  restartedMain] .f.g.GithubRepositorySearcherApplication : Starting GithubRepositorySearcherApplication using Java 21.0.7 with PID 31264 (D:\freightfox assignment\githubrepository-searcher\target\classes started by dines in D:\freightfox assignment\githubrepository-searcher)
+2026-11-20T19:53:31.277+05:30 DEBUG 31264 --- [githubrepository-searcher] [  restartedMain] .f.g.GithubRepositorySearcherApplication : Running with Spring Boot v3.3.5, Spring v6.1.14
+2026-11-20T19:53:31.279+05:30  INFO 31264 --- [githubrepository-searcher] [  restartedMain] .f.g.GithubRepositorySearcherApplication : No active profile set, falling back to 1 default profile: "default"
+2026-11-20T19:53:31.826+05:30  INFO 31264 --- [githubrepository-searcher] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-11-20T19:53:31.832+05:30  INFO 31264 --- [githubrepository-searcher] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
+2026-11-20T19:53:32.112+05:30  INFO 31264 --- [githubrepository-searcher] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-11-20T19:53:32.115+05:30  INFO 31264 --- [githubrepository-searcher] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-11-20T19:53:32.115+05:30  INFO 31264 --- [githubrepository-searcher] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2026-11-20T19:53:32.188+05:30  INFO 31264 --- [githubrepository-searcher] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-11-20T19:53:32.188+05:30  INFO 31264 --- [githubrepository-searcher] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 903 ms
+2026-11-20T19:53:32.325+05:30  INFO 31264 --- [githubrepository-searcher] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-11-20T19:53:32.330+05:30  INFO 31264 --- [githubrepository-searcher] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-11-20T19:53:32.357+05:30  INFO 31264 --- [githubrepository-searcher] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-11-20T19:53:32.383+05:30  INFO 31264 --- [githubrepository-searcher] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-11-20T19:53:32.501+05:30  INFO 31264 --- [githubrepository-searcher] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@41ec3408
+2026-11-20T19:53:32.501+05:30  INFO 31264 --- [githubrepository-searcher] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-11-20T19:53:32.518+05:30  WARN 31264 --- [githubrepository-searcher] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-11-20T19:53:32.583+05:30  INFO 31264 --- [githubrepository-searcher] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-11-20T19:53:32.583+05:30  INFO 31264 --- [githubrepository-searcher] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-11-20T19:53:33.235+05:30  INFO 31264 --- [githubrepository-searcher] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-11-20T19:53:33.270+05:30  INFO 31264 --- [githubrepository-searcher] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-11-20T19:53:33.282+05:30  INFO 31264 --- [githubrepository-searcher] [  restartedMain] .f.g.GithubRepositorySearcherApplication : Started GithubRepositorySearcherApplication in 2.087 seconds (process running for 1154.572)
+2026-11-20T19:53:33.288+05:30  INFO 31264 --- [githubrepository-searcher] [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-11-20T19:53:36.140+05:30  INFO 31264 --- [githubrepository-searcher] [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 23 class path changes (23 additions, 0 deletions, 0 modifications)
+2026-11-20T19:53:36.167+05:30  INFO 31264 --- [githubrepository-searcher] [       Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-11-20T19:53:36.171+05:30  INFO 31264 --- [githubrepository-searcher] [       Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2026-11-20T19:53:36.185+05:30  INFO 31264 --- [githubrepository-searcher] [       Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.5)
+
+2026-11-20T19:53:36.341+05:30  INFO 31264 --- [githubrepository-searcher] [  restartedMain] .f.g.GithubRepositorySearcherApplication : Starting GithubRepositorySearcherApplication using Java 21.0.7 with PID 31264 (D:\freightfox assignment\githubrepository-searcher\target\classes started by dines in D:\freightfox assignment\githubrepository-searcher)
+2026-11-20T19:53:36.341+05:30 DEBUG 31264 --- [githubrepository-searcher] [  restartedMain] .f.g.GithubRepositorySearcherApplication : Running with Spring Boot v3.3.5, Spring v6.1.14
+2026-11-20T19:53:36.341+05:30  INFO 31264 --- [githubrepository-searcher] [  restartedMain] .f.g.GithubRepositorySearcherApplication : No active profile set, falling back to 1 default profile: "default"
+2026-11-20T19:53:36.785+05:30  INFO 31264 --- [githubrepository-searcher] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-11-20T19:53:36.809+05:30  INFO 31264 --- [githubrepository-searcher] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 1 JPA repository interface.
+2026-11-20T19:53:37.015+05:30  INFO 31264 --- [githubrepository-searcher] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-11-20T19:53:37.016+05:30  INFO 31264 --- [githubrepository-searcher] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-11-20T19:53:37.017+05:30  INFO 31264 --- [githubrepository-searcher] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2026-11-20T19:53:37.133+05:30  INFO 31264 --- [githubrepository-searcher] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-11-20T19:53:37.134+05:30  INFO 31264 --- [githubrepository-searcher] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 790 ms
+2026-11-20T19:53:37.255+05:30  INFO 31264 --- [githubrepository-searcher] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-11-20T19:53:37.261+05:30  INFO 31264 --- [githubrepository-searcher] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-11-20T19:53:37.285+05:30  INFO 31264 --- [githubrepository-searcher] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-11-20T19:53:37.306+05:30  INFO 31264 --- [githubrepository-searcher] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2026-11-20T19:53:37.439+05:30  INFO 31264 --- [githubrepository-searcher] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection org.postgresql.jdbc.PgConnection@19fade22
+2026-11-20T19:53:37.440+05:30  INFO 31264 --- [githubrepository-searcher] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2026-11-20T19:53:37.460+05:30  WARN 31264 --- [githubrepository-searcher] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-11-20T19:53:37.930+05:30  INFO 31264 --- [githubrepository-searcher] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-11-20T19:53:37.978+05:30  INFO 31264 --- [githubrepository-searcher] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-11-20T19:53:39.014+05:30  INFO 31264 --- [githubrepository-searcher] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-11-20T19:53:39.057+05:30  INFO 31264 --- [githubrepository-searcher] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-11-20T19:53:39.070+05:30  INFO 31264 --- [githubrepository-searcher] [  restartedMain] .f.g.GithubRepositorySearcherApplication : Started GithubRepositorySearcherApplication in 2.773 seconds (process running for 1160.36)
+2026-11-20T19:53:39.074+05:30  INFO 31264 --- [githubrepository-searcher] [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged

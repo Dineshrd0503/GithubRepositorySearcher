@@ -1,0 +1,102 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------< com.freightfox:githubrepository-searcher >--------------
+[INFO] Building githubrepository-searcher 1.0.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.3.5:run (default-cli) > test-compile @ githubrepository-searcher >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ githubrepository-searcher ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ githubrepository-searcher ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ githubrepository-searcher ---
+[INFO] skip non existing resourceDirectory D:\freightfox assignment\githubrepository-searcher\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ githubrepository-searcher ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] <<< spring-boot:3.3.5:run (default-cli) < test-compile @ githubrepository-searcher <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.3.5:run (default-cli) @ githubrepository-searcher ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.5)
+
+2026-11-20T19:54:25.396+05:30  INFO 27060 --- [githubrepository-searcher] [  restartedMain] .f.g.GithubRepositorySearcherApplication : Starting GithubRepositorySearcherApplication using Java 21.0.7 with PID 27060 (D:\freightfox assignment\githubrepository-searcher\target\classes started by dines in D:\freightfox assignment\githubrepository-searcher)
+2026-11-20T19:54:25.401+05:30 DEBUG 27060 --- [githubrepository-searcher] [  restartedMain] .f.g.GithubRepositorySearcherApplication : Running with Spring Boot v3.3.5, Spring v6.1.14
+2026-11-20T19:54:25.402+05:30  INFO 27060 --- [githubrepository-searcher] [  restartedMain] .f.g.GithubRepositorySearcherApplication : No active profile set, falling back to 1 default profile: "default"
+2026-11-20T19:54:25.509+05:30  INFO 27060 --- [githubrepository-searcher] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-11-20T19:54:25.510+05:30  INFO 27060 --- [githubrepository-searcher] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-11-20T19:54:27.142+05:30  INFO 27060 --- [githubrepository-searcher] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-11-20T19:54:27.272+05:30  INFO 27060 --- [githubrepository-searcher] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 113 ms. Found 1 JPA repository interface.
+2026-11-20T19:54:28.404+05:30  INFO 27060 --- [githubrepository-searcher] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-11-20T19:54:28.432+05:30  INFO 27060 --- [githubrepository-searcher] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-11-20T19:54:28.434+05:30  INFO 27060 --- [githubrepository-searcher] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2026-11-20T19:54:28.625+05:30  INFO 27060 --- [githubrepository-searcher] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-11-20T19:54:28.644+05:30  INFO 27060 --- [githubrepository-searcher] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3132 ms
+2026-11-20T19:54:28.961+05:30  INFO 27060 --- [githubrepository-searcher] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-11-20T19:54:29.096+05:30  INFO 27060 --- [githubrepository-searcher] [  restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2026-11-20T19:54:29.164+05:30  INFO 27060 --- [githubrepository-searcher] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-11-20T19:54:29.921+05:30  INFO 27060 --- [githubrepository-searcher] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-11-20T19:54:30.003+05:30  INFO 27060 --- [githubrepository-searcher] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-11-20T19:54:30.428+05:30  INFO 27060 --- [githubrepository-searcher] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3091463a
+2026-11-20T19:54:30.431+05:30  INFO 27060 --- [githubrepository-searcher] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-11-20T19:54:30.520+05:30  WARN 27060 --- [githubrepository-searcher] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-11-20T19:54:34.496+05:30  INFO 27060 --- [githubrepository-searcher] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-11-20T19:54:34.856+05:30  INFO 27060 --- [githubrepository-searcher] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-11-20T19:54:37.992+05:30  INFO 27060 --- [githubrepository-searcher] [  restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-11-20T19:54:43.105+05:30  INFO 27060 --- [githubrepository-searcher] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-11-20T19:54:43.211+05:30  INFO 27060 --- [githubrepository-searcher] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-11-20T19:54:43.243+05:30  INFO 27060 --- [githubrepository-searcher] [  restartedMain] .f.g.GithubRepositorySearcherApplication : Started GithubRepositorySearcherApplication in 18.528 seconds (process running for 19.674)
+2026-11-20T19:55:08.651+05:30  INFO 27060 --- [githubrepository-searcher] [nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-11-20T19:55:08.652+05:30  INFO 27060 --- [githubrepository-searcher] [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-11-20T19:55:08.655+05:30  INFO 27060 --- [githubrepository-searcher] [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.fetched_at,
+        r1_0.forks_count,
+        r1_0.github_id,
+        r1_0.programming_language,
+        r1_0.last_updated,
+        r1_0.name,
+        r1_0.owner_name,
+        r1_0.stars_count 
+    from
+        repositories r1_0 
+    where
+        r1_0.stars_count>=? 
+    order by
+        r1_0.stars_count desc
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.fetched_at,
+        r1_0.forks_count,
+        r1_0.github_id,
+        r1_0.programming_language,
+        r1_0.last_updated,
+        r1_0.name,
+        r1_0.owner_name,
+        r1_0.stars_count 
+    from
+        repositories r1_0 
+    where
+        r1_0.stars_count>=? 
+    order by
+        r1_0.stars_count desc
