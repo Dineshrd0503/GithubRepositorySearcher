@@ -65,3 +65,156 @@
 2026-11-20T19:56:31.753+05:30  INFO 12184 --- [githubrepository-searcher] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
 2026-11-20T19:56:31.807+05:30  INFO 12184 --- [githubrepository-searcher] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
 2026-11-20T19:56:31.821+05:30  INFO 12184 --- [githubrepository-searcher] [  restartedMain] .f.g.GithubRepositorySearcherApplication : Started GithubRepositorySearcherApplication in 10.128 seconds (process running for 11.299)
+2026-11-20T19:56:57.774+05:30  INFO 12184 --- [githubrepository-searcher] [nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-11-20T19:56:57.774+05:30  INFO 12184 --- [githubrepository-searcher] [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-11-20T19:56:57.779+05:30  INFO 12184 --- [githubrepository-searcher] [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.fetched_at,
+        r1_0.forks_count,
+        r1_0.github_id,
+        r1_0.programming_language,
+        r1_0.last_updated,
+        r1_0.name,
+        r1_0.owner_name,
+        r1_0.stars_count 
+    from
+        repositories r1_0 
+    where
+        r1_0.stars_count>=? 
+    order by
+        r1_0.stars_count desc
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.fetched_at,
+        r1_0.forks_count,
+        r1_0.github_id,
+        r1_0.programming_language,
+        r1_0.last_updated,
+        r1_0.name,
+        r1_0.owner_name,
+        r1_0.stars_count 
+    from
+        repositories r1_0 
+    where
+        lower(r1_0.programming_language)=? 
+        and r1_0.stars_count>=? 
+    order by
+        r1_0.stars_count desc
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.fetched_at,
+        r1_0.forks_count,
+        r1_0.github_id,
+        r1_0.programming_language,
+        r1_0.last_updated,
+        r1_0.name,
+        r1_0.owner_name,
+        r1_0.stars_count 
+    from
+        repositories r1_0 
+    where
+        lower(r1_0.programming_language)=? 
+        and r1_0.stars_count>=? 
+    order by
+        r1_0.stars_count desc
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.fetched_at,
+        r1_0.forks_count,
+        r1_0.github_id,
+        r1_0.programming_language,
+        r1_0.last_updated,
+        r1_0.name,
+        r1_0.owner_name,
+        r1_0.stars_count 
+    from
+        repositories r1_0 
+    where
+        lower(r1_0.programming_language)=? 
+        and r1_0.stars_count>=? 
+    order by
+        r1_0.stars_count desc
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.fetched_at,
+        r1_0.forks_count,
+        r1_0.github_id,
+        r1_0.programming_language,
+        r1_0.last_updated,
+        r1_0.name,
+        r1_0.owner_name,
+        r1_0.stars_count 
+    from
+        repositories r1_0 
+    where
+        lower(r1_0.programming_language)=? 
+        and r1_0.stars_count>=? 
+    order by
+        r1_0.stars_count desc
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.fetched_at,
+        r1_0.forks_count,
+        r1_0.github_id,
+        r1_0.programming_language,
+        r1_0.last_updated,
+        r1_0.name,
+        r1_0.owner_name,
+        r1_0.stars_count 
+    from
+        repositories r1_0 
+    where
+        lower(r1_0.programming_language)=? 
+        and r1_0.stars_count>=? 
+    order by
+        r1_0.stars_count desc
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.fetched_at,
+        r1_0.forks_count,
+        r1_0.github_id,
+        r1_0.programming_language,
+        r1_0.last_updated,
+        r1_0.name,
+        r1_0.owner_name,
+        r1_0.stars_count 
+    from
+        repositories r1_0 
+    where
+        r1_0.stars_count>=? 
+    order by
+        r1_0.stars_count desc
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.fetched_at,
+        r1_0.forks_count,
+        r1_0.github_id,
+        r1_0.programming_language,
+        r1_0.last_updated,
+        r1_0.name,
+        r1_0.owner_name,
+        r1_0.stars_count 
+    from
+        repositories r1_0 
+    where
+        lower(r1_0.programming_language)=? 
+        and r1_0.stars_count>=? 
+    order by
+        r1_0.stars_count desc
