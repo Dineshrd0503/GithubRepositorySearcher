@@ -4,11 +4,11 @@ FROM maven:3.9-eclipse-temurin-21 AS builder
 WORKDIR /app
 
 # Copy pom.xml first to cache dependencies
-COPY pom.xml .
+COPY githubrepository-searcher/pom.xml .
 RUN mvn dependency:go-offline -B
 
 # Copy source code
-COPY src ./src
+COPY githubrepository-searcher/src ./src
 
 # Package the application (skip tests for faster build)
 RUN mvn clean package -DskipTests -B
