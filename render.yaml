@@ -15,7 +15,7 @@ services:
     name: githubrepositorysearcher
     env: docker
     repo: https://github.com/Dineshrd0503/GithubRepositorySearcher
-    dockerfilePath: ./githubrepository-searcher/Dockerfile
+    dockerfilePath: Dockerfile
     dockerContext: ./githubrepository-searcher
     envVars:
       - key: DATABASE_URL
