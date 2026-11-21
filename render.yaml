@@ -1,4 +1,16 @@
 services:
+  # =====================================================================
+  # Managed PostgreSQL database (required by the Spring Boot app)
+  # =====================================================================
+  - type: postgres
+    name: githubrepositorysearcher-db
+    plan: starter
+    databaseName: githubrepositorysearcher
+    user: githubrepositorysearcher
+
+  # =====================================================================
+  # Web service - GitHub Repository Searcher (Docker)
+  # =====================================================================
   - type: web
     name: githubrepositorysearcher
     env: docker
@@ -12,3 +24,5 @@ services:
         sync: false
       - key: DB_PASSWORD
         sync: false
+    # Health check so Render knows the service is up
+    healthCheckPath: /api/github/repositories
